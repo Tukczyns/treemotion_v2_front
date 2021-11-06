@@ -1,20 +1,17 @@
-import { Route, Switch } from "react-router";
-import Nav from "./components/nav/nav";
 import Panel from "./pages/panel/panel";
-import Homepage from "./pages/homepage";
+import Homepage from "./pages/homepage/homepage";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./components/dashboard/dashboard";
 
 function App() {
   return (
     <div>
-      <Nav />
-      <Switch>
-        <Route path="/home">
-          <Panel />
+      <Routes>
+        <Route path="/panel/*" element={<Panel />}>
+          <Route path="" element={<Dashboard />} />
         </Route>
-        <Route path="/">
-          <Homepage />
-        </Route>
-      </Switch>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
     </div>
   );
 }

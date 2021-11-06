@@ -1,8 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 const Loader: React.FC = () => {
   return (
-    <SpinnerContainer className="h-screen w-full bg-gray-900 flex flex-col items-center justify-center">
+    <SpinnerContainer className="fixed left-0 top-0 z-50 h-screen w-full bg-gray-900 flex flex-col items-center justify-center">
       <Spinnner>
         <div></div>
         <div></div>
@@ -29,10 +29,22 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `;
-
-const SpinnerContainer = styled.div`
-  animation: ${fadeIn} 1s linear;
+const fadeOut = keyframes`
+  0%{
+    opacity:  1;
+  }
+  99%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
 `;
+
+const SpinnerContainer = styled.div``;
 
 const animation = keyframes`
     0%,
@@ -49,6 +61,8 @@ const Spinnner = styled.div`
   position: relative;
   width: 80px;
   height: 80px;
+  animation: ${fadeIn} 1s linear forwards;
+
   & div {
     position: absolute;
     width: 16px;
