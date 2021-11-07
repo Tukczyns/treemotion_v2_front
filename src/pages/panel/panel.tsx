@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         <SideNav menuOpen={menuOpen} toggleMenu={toggleMenu} />
         <div
           className={`flex-1 flex h-full bg-gray-900 p-3 transform duration-300 ${
-            menuOpen && "scale-y-90"
+            menuOpen && ""
           }`}
         >
           <div className="w-2/3 h-full bg-gray-800 shadow-xl p-16">

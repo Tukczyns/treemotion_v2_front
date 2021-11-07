@@ -30,7 +30,7 @@ const LastWorkout: React.FC = () => {
           </div>
         </div>
         <div className="border border-gray-600 rounded-lg p-4 flex">
-          <div className="p-4 bg-gray-200 rounded-lg text-gray-900 text-3xl">
+          <div className="p-4 bg-blue-500 rounded-lg text-white text-3xl">
             <FiClock />
           </div>
           <div className="ml-5">

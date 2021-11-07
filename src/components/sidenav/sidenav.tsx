@@ -25,7 +25,7 @@ const SideNav: React.FC<IProps> = ({ menuOpen, toggleMenu }) => {
         </div>
         <nav className="flex flex-col items-start">
           <Link
-            route={"/panel"}
+            route={"/panel/"}
             icon={<BiHome />}
             menuOpen={menuOpen}
             text="Strona główna"
@@ -37,7 +37,7 @@ const SideNav: React.FC<IProps> = ({ menuOpen, toggleMenu }) => {
             text="Treningi"
           />
           <Link
-            route={"/panel/challenges"}
+            route={"/panel/rankings"}
             icon={<GiPodium />}
             menuOpen={menuOpen}
             text="Rankingi"
