@@ -46,7 +46,7 @@ const SideNav: React.FC<IProps> = ({ menuOpen, toggleMenu }) => {
             route={"/panel/challenges"}
             icon={<AiOutlineTrophy />}
             menuOpen={menuOpen}
-            text="Wyzwania"
+            text="Wyzwania i osiągnięcia"
           />
           <Link
             route={"/panel/search"}

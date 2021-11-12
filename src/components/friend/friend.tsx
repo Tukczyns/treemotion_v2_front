@@ -7,7 +7,7 @@ const Friend: React.FC = () => {
   return (
     <div className="flex justify-between items-center my-3 text-white">
       <div className="flex items-center">
-        <Avatar url="" />
+        <Avatar url="" small />
         <div className="ml-4">
           <p className="text-lg">Username</p>
           <p className="text-sm">Lvl. 21</p>

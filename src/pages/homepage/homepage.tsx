@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Login from "../../components/auth/login/login";
 import Nav from "../../components/nav/nav";
 import HomepageContent from "./homepage_content/homepage_content";
 
 const Homepage: React.FC = () => {
+  const location = useLocation();
+
   const [split, setSplit] = useState(false);
   const [isLogged, setIsLogged] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === "/login" || location.pathname === "/register")
+      setSplit(true);
+  }, []);
 
   return (
     <React.Fragment>

@@ -20,7 +20,7 @@ interface IProps {
   setIsLogged: (arg: boolean) => void;
 }
 
-const Login: React.FC<IProps> = ({ setIsLogged }) => {
+const Register: React.FC<IProps> = ({ setIsLogged }) => {
   const navigate = useNavigate();
 
   const initialValues: FormValues = { identifier: "", password: "" };
@@ -83,4 +83,4 @@ const Login: React.FC<IProps> = ({ setIsLogged }) => {
   );
 };
 
-export default Login;
+export default Register;

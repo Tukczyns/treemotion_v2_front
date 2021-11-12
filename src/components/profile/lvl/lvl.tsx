@@ -6,8 +6,8 @@ const Lvl: React.FC = () => {
     <div className="mt-9">
       <PanelSectionName text="Poziom profilu" />
       <div className="mt-3">
-        <p className="text-2xl text-white font-bold">Zawodowiec</p>
-        <div className="w-full h-4 bg-gray-800 rounded-lg mt-2 overflow-hidden">
+        <p className="text-xl text-white font-bold">lvl. 21, Zawodowiec</p>
+        <div className="w-full h-3 bg-gray-800 rounded-lg mt-2 overflow-hidden">
           <div className="w-2/3 h-full bg-green-500" />
         </div>
         <div>
