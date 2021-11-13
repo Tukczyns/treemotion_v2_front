@@ -6,6 +6,7 @@ import Workouts from "./pages/panel/workouts/workouts";
 import WorkoutDetail from "./pages/panel/workout_detail/workout_detail";
 import ChallengesAndAchievements from "./pages/panel/challenges_and_achievements/challenges_and_achievements";
 import PageNotFound from "./pages/404/404";
+import Rankings from "./pages/panel/rankings/rankings";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/panel/*" element={<Panel />}>
           <Route path="" element={<Dashboard />} />
           <Route path="challenges" element={<ChallengesAndAchievements />} />
+          <Route path="rankings" element={<Rankings />} />
           <Route path="workouts" element={<Workouts />} />
           <Route path="workouts/:id" element={<WorkoutDetail />} />
         </Route>

@@ -7,8 +7,29 @@
   height: 100%;
 }
 
-@layer utilities{
-  .h-112{
+@layer utilities {
+  .h-112 {
     height: 26rem;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9ca3af;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+  cursor: pointer;
 }

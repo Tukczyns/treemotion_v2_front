@@ -1,5 +1,6 @@
 import LastWorkout from "../../../components/last_workout/last_workout";
 import PageTitleBar from "../../../components/page_title_bar/page_title_bar";
+import Summary from "../../../components/summary/summary";
 
 const Dashboard: React.FC = () => {
   return (
@@ -8,7 +9,9 @@ const Dashboard: React.FC = () => {
       <div className="grid grid-cols-2 mt-5 gap-8">
         <LastWorkout />
         <div className=" h-80 bg-gray-900 rounded-xl"></div>
-        <div className="h-80 bg-gray-900 rounded-xl"></div>
+        <div className="h-80 bg-gray-900 rounded-xl">
+          <Summary />
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const ChallengesAndAchievements: React.FC = () => {
   return (
     <div className="w-full h-full">
       <PageTitleBar title="Wyzwania i osiągnięcia" />
-      <div className="mt-5">
+      <div id="achievements" className="mt-5 overflow-hidden">
         <PanelSectionName text="Osiągnięcia" />
         <div className="grid grid-cols-3 gap-4 mt-4">
           <Achievement completed={true} />
@@ -19,9 +19,13 @@ const ChallengesAndAchievements: React.FC = () => {
           <ButtonPrimary text="Zobacz więcej" type="button" rank="secondary" />
         </div>
       </div>
-      <div className="mt-5">
+      <div
+        id="challenges"
+        className="mt-5 overflow-hidden"
+        // style={{ maxHeight: "calc(100% - 40px)" }}
+      >
         <PanelSectionName text="Wyzwania" />
-        <div className="grid grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-2 gap-4 mt-4 ">
           <Challenge type={EChallenge.DAILY} finished={false} />
           <Challenge type={EChallenge.DISTANCE} finished={false} />
           <Challenge type={EChallenge.TIME} finished={false} />

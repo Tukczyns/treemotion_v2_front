@@ -21,11 +21,10 @@ const Home: React.FC = () => {
       <div className="w-full h-full flex justify-between">
         <SideNav menuOpen={menuOpen} toggleMenu={toggleMenu} />
         <div
-          className={`flex-1 flex h-full bg-gray-900 p-3 transform duration-300 ${
-            menuOpen && ""
-          }`}
+          className={`flex-1 flex h-full bg-gray-900 p-3 transform duration-300 ${menuOpen && ""
+            }`}
         >
-          <div className="w-2/3 h-full bg-gray-800 shadow-xl p-16">
+          <div className="w-2/3 h-full bg-gray-800 shadow-xl p-16 overflow-y-auto">
             <Outlet />
           </div>
           <div className="h-full w-1/3">

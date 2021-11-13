@@ -3,8 +3,6 @@ import PageTitleBar from "../../../components/page_title_bar/page_title_bar";
 import {
   MapContainer,
   TileLayer,
-  Marker,
-  Popup,
   Polyline,
 } from "react-leaflet";
 import { FiClock } from "react-icons/fi";
